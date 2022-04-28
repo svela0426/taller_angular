@@ -1,0 +1,7 @@
+.titulo{
+    background-color:  rgb(79, 160, 181) ;
+    width: 400%;
+
+    }
+
+tbody td:nth-child(2) {color: rgb(55, 26, 134);}
