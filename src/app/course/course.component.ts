@@ -11,14 +11,16 @@ import { CourseService } from './course.service';
 
     constructor(private courseService: CourseService) { }
     courses: Array<Course>=[];
-    pala:string="";
+    pala:number=0;
      numero: number = 0;
   
     getCourses() {
       this.courseService.getCourses().subscribe(courses => {
         this.courses = courses;
-        courses.forEach((course) => this.pala = this.pala + course.titulo);
-        this.pala=this.pala;
+        courses.forEach((course) => this.pala = this.pala + course.seasons);
+        courses.forEach((course) => this.numero +=1);
+
+        this.pala=this.pala/this.numero;
       });
     }
     gethola() {

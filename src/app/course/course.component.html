@@ -4,19 +4,25 @@
         <thead>
           <h2 class="titulo">TV Series</h2>
           <tr>
-            <th>cancion</th>
-            <th>duracion</th> 
+            <th>name</th>
+            <th> channel</th> 
+            <th> seasons</th> 
+
           </tr>
         </thead>
         <tbody>
             <tr *ngFor="let c of courses">
                 <td>
-                  <dd class="nombre">{{c.titulo}}</dd>
+                  <dd class="nombre">{{c.name}}</dd>
                 </td>
                 <td>
-                  <dd>{{c.duracion}}</dd>
+                  <dd>{{c.channel}}</dd>
+                </td>
+                <td>
+                  <dd>{{c.seasons}}</dd>
                 </td>
             </tr>
+            <div> season average {{pala}}</div>
         </tbody>
       </table>
     </div>
